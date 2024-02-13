@@ -13,7 +13,6 @@ html {
 
 /* General Container */
 .container {
-  border: 3px solid black;
   display: flex;
   flex-direction: column;
   background-color: #f5f5f5;
@@ -21,7 +20,6 @@ html {
 
 /* Image Section */
 .image-section {
-  border: 3px solid green;
   position: relative;
   color: white;
 }
@@ -50,7 +48,6 @@ html {
 
 /* Text Section */
 .text-section {
-  border: 3px solid purple;
   display: flex;
   justify-content: center;
   padding: 30px 0;
@@ -58,10 +55,13 @@ html {
 }
 
 .header-text {
-  border: 3px solid red;
   width: 80%;
   display: flex;
   flex-direction: column;
+}
+
+.italicised {
+  font-style: italic;
 }
 
 .header-text p:nth-child(1) {
@@ -70,20 +70,25 @@ html {
 
 /* Form Section */
 .form-section {
-  border: 3px solid pink;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  padding: 10px 35px;
-  font-size: 1rem;
+}
+
+.form-section form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 10px 0;
 }
 
 .form-title {
   font-weight: 900;
+  margin-top: 10px;
 }
 
 .form-row {
-  /* border: 3px solid green; */
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -97,6 +102,16 @@ html {
   margin-top: 20px;
 }
 
+.form-row input {
+  border: 1px solid #e5e7eb;
+  padding: 5px;
+}
+
+.form-row:nth-child(5) {
+  display: flex;
+  align-items: center;
+}
+
 .form-button {
   background-color: #596d48;
   color: #ffffff;
@@ -105,10 +120,22 @@ html {
   border: none;
   margin: 10px 0 20px;
   box-shadow: 2px 2px 2px #c1bfbf;
+  font-size: 1rem;
+  width: 80%;
 }
 
 /* Change colour of background space around button */
 /* Is this the correct approach? */
-.form-section .form-row:nth-child(5) {
-  background-color: pink;
+/* Maybe easier to just remove the background on this part if possible */
+
+/* Log In Section */
+.log-in-section {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.log-in-link {
+  color: #596d48;
+  font-weight: 700;
 }
