@@ -107,6 +107,22 @@ html {
   padding: 5px;
 }
 
+.focused {
+  border-color: blue;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+  outline: none;
+}
+
+.form-row.password-fields .password-mismatch {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
 .form-row:nth-child(5) {
   display: flex;
   align-items: center;
@@ -124,10 +140,6 @@ html {
   width: 80%;
 }
 
-/* Change colour of background space around button */
-/* Is this the correct approach? */
-/* Maybe easier to just remove the background on this part if possible */
-
 /* Log In Section */
 .log-in-section {
   display: flex;
@@ -138,4 +150,5 @@ html {
 .log-in-link {
   color: #596d48;
   font-weight: 700;
+  text-decoration: none;
 }
