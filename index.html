@@ -36,6 +36,7 @@
           </div>
         </div>
       </div>
+
       <div class="section-b">
         <div class="text-section">
           <div class="header-text">
@@ -48,39 +49,49 @@
           </div>
         </div>
 
-        <!-- FINISH PASSWORD CHECK -> ADD IN REQUIRED FOR INPUTS -->
-
         <div class="form-section">
           <form action="">
             <legend class="form-title">Let's do this!</legend>
-            <div class="form-row">
-              <label for="first-name">First Name</label>
-              <input type="text" name="first-name" id="first-name" required />
-              <label for="last-name">Last Name</label>
-              <input type="text" name="last-name" id="last-name" required />
+            <div class="form-row name-fields">
+              <div class="form-row-segment">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" required />
+              </div>
+              <div class="form-row-segment">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" required />
+              </div>
             </div>
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" required />
-              <label for="phone-number">Phone Number</label>
-              <!-- Maybe issue around number here (0 is ignored?)-->
-              <input
-                type="number"
-                name="phone-number"
-                id="phone-number"
-                required
-              />
+            <div class="form-row contact-fields">
+              <div class="form-row-segment">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="form-row-segment">
+                <label for="phone-number">Phone Number</label>
+                <!-- Maybe issue around number here (0 is ignored?)-->
+                <input
+                  type="number"
+                  name="phone-number"
+                  id="phone-number"
+                  required
+                />
+              </div>
             </div>
             <div class="form-row password-fields">
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" required />
-              <label for="confirm-password">Confirm Password</label>
-              <input
-                type="password"
-                name="confirm-password"
-                id="confirm-password"
-                required
-              />
+              <div class="form-row-segment">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+              <div class="form-row-segment">
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  required
+                />
+              </div>
             </div>
             <div class="form-row">
               <button class="form-button" type="submit">Create Account</button>
@@ -95,7 +106,6 @@
         </div>
       </div>
     </div>
-    <!-- Photo by <a href="https://unsplash.com/@alexkixa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alexandre Debiève</a> on <a href="https://unsplash.com/photos/macro-photography-of-black-circuit-board-FO7JIlwjOtU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
     <script src="script.js"></script>
   </body>
 </html>
